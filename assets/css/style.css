@@ -1,0 +1,58 @@
+body{
+    font-size: 1.5em;
+    height: 100%;
+}
+#repeat-y {
+    background: url('https://i.redd.it/5xfzcfnsgu7x.png');
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    width: 100%;
+}
+#title {
+    font-family: 'Righteous', cursive;
+    font-size: 100px;
+    color:brown;
+}
+#questionArea {
+    background: rgba(250, 235, 215, 0.7);
+    padding: 10px;
+    margin: 10px;
+    color: #7a524c;
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+    /* height: 100%; */
+}
+b {
+    font-family: 'Righteous', cursive;
+    color: #7a524c;
+    font-size: 1.25em;
+}
+
+#btn0,#btn1,#btn2,#btn3,#submit,#q1a, #q1b,#q1c,#q1d,#q2a, #q2b,#q2c,#q2d,#q3a, #q3b,#q3c,#q3d,#q4a, #q4b,#q4c,#q4d,#q5a, #q5b,#q5c,#q5d,#q6a, #q6b,#q6c,#q6d,#q7a, #q7b,#q7c,#q7d,#q8a, #q8b,#q8c,#q8d{
+    background-color: brown;
+    width: 400px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: antiquewhite;
+    border: 10px;
+    border-style: groove;
+    border-color: antiquewhite;
+    border-radius: 20px;
+    /* margin: 10px 40px 10px 0px; */
+    padding: 10px 10px;
+    margin: 2.5px;
+}
+
+
+/* #btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover, #submit:hover {
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
+
+#btn0:focus,#btn1:focus,#btn2:focus,#btn3:focus, #submit:hover {
+    outline: none;
+} */

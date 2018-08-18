@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="container-fluid full" id="repeat-y">
+    <div>
+        <audio src="https://www.youtube.com/watch?v=vD12mZiFPtM"></audio>
+
+        <h1 id="title" class="text-center">70s Trivia Game</h1>
+
+        <section>
+            <div id="results"></div>
+            <div class="jumbotron" id="questionArea">
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <p>
+                        <b>Q1. What term did people use to refer to the Beatles debuting in North America?</b>
+                        <br>
+                        <input type="radio" name="q1" value="a">
+                        <button type="radio" name="q1" value="a" id="q1a">
+                            The British Invasion</button>
+                        <br>
+                        <input type="radio" name="q1" value="b">
+                        <button type="radio" name="q1" value="b" id="q1b">
+                            The Psychedelic Invasion</button>
+                        <br>
+                        <input type="radio" name="q1" value="c">
+                        <button type="radio" name="q1" value="c" id="q1c">
+                            The Great British Debut</button>
+                        <br>
+                        <input type="radio" name="q1" value="d">
+                        <button type="radio" name="q1" value="d" id="q1d">
+                            The Dawn of the Hippies</button>
+                        <br>
+
+
+
+                    </p>
+
+                    <p>
+                        <b>Q2. In 1974, what song did Abba win Eurovision with, and subsequently rise to international stardom?</b>
+
+                        <br>
+                        <input type="radio" name="q2" value="a">
+                        <button type="radio" name="q2" value="a" id="q2a">
+                            Mamma Mia</button>
+                        <br>
+                        <input type="radio" name="q2" value="b">
+                        <button type="radio" name="q2" value="b" id="q2b">
+                            Dancing Queen</button>
+                        <br>
+                        <input type="radio" name="q2" value="c">
+                        <button type="radio" name="q2" value="c" id="q2c">
+                            The Winner Takes It All</button>
+                        <br>
+                        <input type="radio" name="q2" value="d">
+                        <button type="radio" name="q2" value="d" id="q2d">
+                            Waterloo</button>
+                        <br>
+
+
+
+
+                        <!-- <br>
+                        <input type="radio" name="q2" value="a" id="q2a">Mamma Mia
+                        <br>
+                        <input type="radio" name="q2" value="b" id="q2b">Dancing Queen
+                        <br>
+                        <input type="radio" name="q2" value="c" id="q2c">The Winner Takes It All
+                        <br>
+                        <input type="radio" name="q2" value="d" id="q2d">Waterloo
+                        <br> -->
+                    </p>
+                    <p>
+                        <b>Q3. Who is the famous guitarist from Cream, who went on to also have a solo career?</b>
+                        <br>
+                        <input type="radio" name="q3" value="a">
+                        <button type="radio" name="q3" value="a" id="q3a">
+                            Jimi Hendrix</button>
+                        <br>
+                        <input type="radio" name="q3" value="b">
+                        <button type="radio" name="q3" value="b" id="q3b">
+                            Chuck Berry</button>
+                        <br>
+                        <input type="radio" name="q3" value="c">
+                        <button type="radio" name="q3" value="c" id="q3c">
+                            Eric Clapton</button>
+                        <br>
+                        <input type="radio" name="q3" value="d">
+                        <button type="radio" name="q3" value="d" id="q3d">
+                            Mark Knopfler</button>
+                        <br>
+
+
+
+
+
+
+
+                        <!-- <br>
+                        <input type="radio" name="q3" value="a" id="q3a">Jimi Hendrix
+                        <br>
+                        <input type="radio" name="q3" value="b" id="q3b">Chuck Berry
+                        <br>
+                        <input type="radio" name="q3" value="c" id="q3c">Eric Clapton
+                        <br>
+                        <input type="radio" name="q3" value="d" id="q3d">Mark Knopfler
+                        <br> -->
+
+                    </p>
+                    <p>
+                        <b>Q4. Which period was the pilot of TV show Mad Men set in?</b>
+                        
+                        <br>
+                        <input type="radio" name="q4" value="a">
+                        <button type="radio" name="q4" value="a" id="q4a">
+                            The 60s</button>
+                        <br>
+                        <input type="radio" name="q4" value="b">
+                        <button type="radio" name="q4" value="b" id="q4b">
+                            The 70s</button>
+                        <br>
+                        <input type="radio" name="q4" value="c">
+                        <button type="radio" name="q4" value="c" id="q4c">
+                            The 80s</button>
+                        <br>
+                        <input type="radio" name="q4" value="d">
+                        <button type="radio" name="q4" value="d" id="q4d">
+                            The 50s</button>
+                        <br>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- <br>
+                        <input type="radio" name="q4" value="a" id="q4a">The 60s
+                        <br>
+                        <input type="radio" name="q4" value="b" id="q4b">The 70s
+                        <br>
+                        <input type="radio" name="q4" value="c" id="q4c">The 80s
+                        <br>
+                        <input type="radio" name="q4" value="d" id="q4d">The 50s
+                        <br> -->
+
+                    </p>
+                    <p>
+                        <b>Q5. Which country were the Olympics in 1976 hosted?</b>
+                       
+                        <br>
+                        <input type="radio" name="q5" value="a">
+                        <button type="radio" name="q5" value="a" id="q5a">
+                            Austria</button>
+                        <br>
+                        <input type="radio" name="q5" value="b">
+                        <button type="radio" name="q5" value="b" id="q5b">
+                            Italy</button>
+                        <br>
+                        <input type="radio" name="q5" value="c">
+                        <button type="radio" name="q5" value="c" id="q5c">
+                            Mexico</button>
+                        <br>
+                        <input type="radio" name="q5" value="d">
+                        <button type="radio" name="q5" value="d" id="q5d">
+                            Canada</button>
+                        <br>
+                       
+                       
+                       
+                       
+                       
+                       
+
+                       
+        <!-- <br>
+                        <input type="radio" name="q5" value="a" id="q5a">Austria
+                        <br>
+                        <input type="radio" name="q5" value="b" id="q5b">Italy
+                        <br>
+                        <input type="radio" name="q5" value="c" id="q5c">Mexico
+                        <br>
+                        <input type="radio" name="q5" value="d" id="q5d">Canada
+                        <br> -->
+
+                    </p>
+                    <p>
+                        <b>Q6. Which year did the famous painter Pablo Picasso die?</b>
+                        <br>
+                        <input type="radio" name="q6" value="a">
+                        <button type="radio" name="q6" value="a" id="q6a">
+                            1970</button>
+                        <br>
+                        <input type="radio" name="q6" value="b">
+                        <button type="radio" name="q6" value="b" id="q6b">
+                            1971</button>
+                        <br>
+                        <input type="radio" name="q6" value="c">
+                        <button type="radio" name="q6" value="c" id="q6c">
+                            1972</button>
+                        <br>
+                        <input type="radio" name="q6" value="d">
+                        <button type="radio" name="q6" value="d" id="q6d">
+                            1973</button>
+                        <br>
+                        
+                        
+                        
+                        
+                        <!-- <br>
+                        <input type="radio" name="q6" value="a" id="q6a">1970
+                        <br>
+                        <input type="radio" name="q6" value="b" id="q6b">1971
+                        <br>
+                        <input type="radio" name="q6" value="c" id="q6c">1972
+                        <br>
+                        <input type="radio" name="q6" value="d" id="q6d">1973
+                        <br> -->
+
+                    </p>
+
+                    <p>
+                        <b>Q7. In which song in the movie Grease does John Travolta sing about a car?</b>
+                        
+                        <br>
+                        <input type="radio" name="q7" value="a">
+                        <button type="radio" name="q7" value="a" id="q7a">
+                            Beauty School Dropout</button>
+                        <br>
+                        <input type="radio" name="q7" value="b">
+                        <button type="radio" name="q7" value="b" id="q7b">
+                            Greased Lightning</button>
+                        <br>
+                        <input type="radio" name="q7" value="c">
+                        <button type="radio" name="q7" value="c" id="q7c">
+                            We Go Together </button>
+                        <br>
+                        <input type="radio" name="q7" value="d">
+                        <button type="radio" name="q7" value="d" id="q7d">
+                            There Are Worse Things I Could Do</button>
+                        <br>
+                        
+                        
+                        
+                        <!-- <br>
+                        <input type="radio" name="q7" value="a" id="q7a">Beauty School Dropout
+                        <br>
+                        <input type="radio" name="q7" value="b" id="q7b">Greased Lightning
+                        <br>
+                        <input type="radio" name="q7" value="c" id="q7c">We Go Together
+                        <br>
+                        <input type="radio" name="q7" value="d" id="q7d">There are Worse Things I Could Do
+                        <br> -->
+
+                    </p>
+                    <p>
+                        <b>Q8. Which movie contains the famous phrase: I'll make you an offer you can't refuse?</b>
+                        
+                        <br>
+                        <input type="radio" name="q8" value="a">
+                        <button type="radio" name="q8" value="a" id="q8a">
+                            The Godfather</button>
+                        <br>
+                        <input type="radio" name="q8" value="b">
+                        <button type="radio" name="q8" value="b" id="q8b">
+                            Rocky</button>
+                        <br>
+                        <input type="radio" name="q8" value="c">
+                        <button type="radio" name="q8" value="c" id="q8c">
+                            A Clockwork Orange</button>
+                        <br>
+                        <input type="radio" name="q8" value="d">
+                        <button type="radio" name="q8" value="d" id="q8d">
+                            The Departed</button>
+                        <br>
+                        
+                        
+                        
+                        
+                        <!-- <br>
+                        <input type="radio" name="q8" value="a" id="q8a">The Godfather
+                        <br>
+                        <input type="radio" name="q8" value="b" id="q8b">Rocky
+                        <br>
+                        <input type="radio" name="q8" value="c" id="q8c">A Clockwork Orange
+                        <br>
+                        <input type="radio" name="q8" value="d" id="q8d">The Departed
+                        <br> -->
+                    </p>
+
+                    <!-- ////////////////////////////////////////// -->
+                    <!-- <div id="page-1" class="row quiz hide">
+                        <p id="question">Question 1</p>
+                        <br>
+        
+                        <div class="buttons"></div>
+                        <button id="btn0" data-id="1" class="answer">
+                            <span id="choice0"></span>
+                        </button>
+                        <button id="btn1" data-id="2" class="answer">
+                            <span id="choice1"></span>
+                        </button>
+                        <br>
+                        <button id="btn2" data-id="3" class="answer">
+                            <span id="choice2"></span>
+                        </button>
+                        <button id="btn3" data-id="4" class="answer">
+                            <span id="choice3"></span>
+                        </button>
+                    </div> -->
+                    <!-- ////////////////////////////////////////// -->
+                    <br>
+                    <br>
+                    <input type="submit" id="submit" value="Go">
+
+            </div>
+        </section>
+
+
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
